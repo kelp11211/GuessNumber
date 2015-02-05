@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/dialog_textview_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dialog_radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/main_bottom_layout_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal"
+        android:textColor="@color/board_mytext"
+        android:textSize="@dimen/dialog_radiobutton_textsize" />
+
+    <RadioGroup
+        android:id="@+id/dialog_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin" >
+
+        <RadioButton
+            android:id="@+id/radio_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dialog_radiobutton_margin"
+            android:layout_marginEnd="@dimen/dialog_radiobutton_margin"
+            android:checked="true"
+            android:text="@string/dialog_easy"
+            android:textSize="@dimen/dialog_radiobutton_textsize" />
+
+        <RadioButton
+            android:id="@+id/radio_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_normal"
+            android:textSize="@dimen/dialog_radiobutton_textsize" />
+
+        <RadioButton
+            android:id="@+id/radio_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_radiobutton_margin"
+            android:layout_marginStart="@dimen/dialog_radiobutton_margin"
+            android:text="@string/dialog_hard"
+            android:textSize="@dimen/dialog_radiobutton_textsize" />
+
+    </RadioGroup>
+
+</RelativeLayout>

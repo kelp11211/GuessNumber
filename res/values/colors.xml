@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_01">#FFFF55</color>
+    <color name="yellow_02">#FFFF00</color>
+    <color name="gray_01">#808080</color>
+    <color name="gray_02">#C0C0C0</color>
+    <color name="orange_01">#FF4500</color>
+    <color name="orange_02">#FF8C00</color>
+    <color name="blue_01">#0000CD</color>
+    <color name="blue_02">#00BFFF</color>
+    <color name="board_border">#00BBFF</color>
+    <color name="board_mytext">#77FF00</color>
+    <color name="title_color">#228B22</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

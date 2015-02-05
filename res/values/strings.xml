@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Default -->
+    <string name="app_name">GuessNumber</string>
+    <string name="hello_world">Hello world!</string>
+	<!-- MainActivity -->
+	<string name="main_button_guess_text">猜猜</string>
+	<!-- SettingDialog -->
+	<string name="dialog_title">難易度選擇</string>
+	<string name="dialog_easy">簡單</string>
+	<string name="easy_description">3個數字  可猜10次</string>
+	<string name="dialog_normal">正常</string>
+	<string name="normal_description">4個數字  可猜10次</string>
+	<string name="dialog_hard">困難</string>
+	<string name="hard_description">5個數字  可猜15次</string>
+	<string name="dialog_positive_button">確定</string>
+	<string name="dialog_negative_button">取消</string>
+	<string name="dialog_detail">如不選取則保持原始設定</string>
+	<!-- Menu -->
+	<string name="action_settings">設定</string>
+	<string name="action_records">紀錄</string>
+	<string name="action_newgame">新局</string>
+</resources>

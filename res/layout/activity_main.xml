@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="kelp.guessnumber.MainActivity" >
+
+    <TextView
+        android:id="@+id/main_textview_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_textview_description"
+        android:layout_margin="@dimen/main_bottom_layout_margin"
+        android:background="@drawable/board"
+        android:padding="@dimen/main_board_text_padding"
+        android:textColor="@color/board_mytext"
+        android:textSize="@dimen/main_board_textsize" />
+
+    <RelativeLayout
+        android:id="@+id/main_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/main_bottom_layout_margin" >
+
+        <EditText 
+            android:id="@+id/main_edittext_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/main_button_guess"
+            android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/main_button_guess"
+            android:layout_marginRight="@dimen/main_bottom_layout_margin"
+            android:layout_marginEnd="@dimen/main_bottom_layout_margin"
+            android:layout_toLeftOf="@+id/main_button_guess"
+            android:layout_toStartOf="@+id/main_button_guess"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:inputType="number" >
+        </EditText >
+
+        <Button
+            android:id="@+id/main_button_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_button"
+            android:text="@string/main_button_guess_text"
+            android:textSize="@dimen/main_board_textsize" 
+            android:nextFocusForward="@id/main_bottom_layout"  />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_textview_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/main_bottom_layout_margin"
+        android:layout_marginTop="@dimen/main_bottom_layout_margin"
+        android:background="@drawable/board"
+        android:padding="@dimen/main_board_text_padding"
+        android:textColor="@color/board_mytext"
+        android:textSize="@dimen/main_board_textsize" />
+
+</RelativeLayout>
